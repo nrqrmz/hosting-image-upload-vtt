@@ -2,6 +2,8 @@
 
 <h1>Articles</h1>
 
+<%#= cl_image_tag("https://res.cloudinary.com/druc0epi3/image/upload/v1669347247/tcmardxclzks0zk1rmpz.jpg", gravity: :face) %>
+
 <div id="articles">
   <% @articles.each do |article| %>
     <%= render article %>
@@ -10,5 +12,9 @@
     </p>
   <% end %>
 </div>
+<!--
+-->
+
+
 
 <%= link_to "New article", new_article_path %>
